@@ -30,7 +30,7 @@ app.use(flash());
 // end flash
 
 
-app.set('views', '${__dirname}/views')
+app.set('views', `${__dirname}/views`)
 app.set('view engine', 'pug')
 
 
