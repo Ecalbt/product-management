@@ -34,10 +34,11 @@ app.set('views', '${__dirname}/views')
 app.set('view engine', 'pug')
 
 
-app.use(express.static(`${__dirname}/public`))
-
 //App local variables:
 app.locals.prefixAdmin = systemConfig.prefixAdmin;
+
+app.use(express.static(`${__dirname}/public`))
+
 
 route(app);
 routeAdmin(app);
