@@ -6,6 +6,8 @@ const session = require('express-session')
 const cookieParser = require('cookie-parser')
 const multer  = require('multer')
 const upload = multer({ dest: './public/uploads/' })
+const cloudinary = require('cloudinary').v2
+const streamifier = require('streamifier')
 
 require('dotenv').config();
 
